@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 # ALLOWED_HOSTS = ['8000-sooryageorge7-django-blo-kaje6n5zaw.us2.codeanyapp.com']
-ALLOWED_HOSTS = ["codestar2021.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["django-blogs.herokuapp.com", "localhost"]
 
 # Application definition
 
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'blog',
+    'django-blogs',
 ]
 
 MIDDLEWARE = [
