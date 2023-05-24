@@ -35,6 +35,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-sooryageorge7-django-blo-kaje6n5zaw.us2.codeanyapp.com']
 # ALLOWED_HOSTS = ["django-blogs.herokuapp.com", "localhost"]
 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,12 +45,21 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
     'blog',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
